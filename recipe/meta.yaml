@@ -1,6 +1,6 @@
 # Generated using grayskull; edited by @ericmjl.
 {% set name = "xarray-einstats" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xarray-einstats-{{ version }}.tar.gz
-  sha256: 3f799ead32bb28ce4e9b3cf95c2daa9c2040f06b25a34f8f2cd303f0268445ed
+  sha256: 45283e8b471ac54ac2957bc14e311f681b84dabc50c85959b9931e6f5cc60bcb
 
 build:
   noarch: python
