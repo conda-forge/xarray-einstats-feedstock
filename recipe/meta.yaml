@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip >=21.3
-    - python >=3.8
+    - python >=3.9
     - flit
   run:
-    - numpy >=1.20
-    - python >=3.8
-    - scipy >=1.6
+    - numpy >=1.21
+    - python >=3.9
+    - scipy >=1.7
     - xarray >=2022.09.0
 
 test:
