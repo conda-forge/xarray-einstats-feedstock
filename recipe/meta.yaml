@@ -21,9 +21,9 @@ requirements:
     - python >=3.9
     - flit
   run:
-    - numpy >=1.21
+    - numpy >=1.22
     - python >=3.9
-    - scipy >=1.7
+    - scipy >=1.8
     - xarray >=2022.09.0
 
 test:
