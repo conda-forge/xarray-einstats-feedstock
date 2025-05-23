@@ -1,7 +1,7 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 # Generated using grayskull; edited by @ericmjl.
 {% set name = "xarray-einstats" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7f1573f9bd4d60d6e7ed9fd27c4db39da51ec49bf8ba654d4602a139a6309d7f
+  sha256: 12d2352b55d7f0ca7c6c0daca2225ad123413c5c4a4a70d5aff14ac74c60ea81
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
