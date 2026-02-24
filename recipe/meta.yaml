@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 # Generated using grayskull; edited by @ericmjl.
 {% set name = "xarray-einstats" %}
 {% set version = "0.10.0" %}
@@ -22,10 +22,10 @@ requirements:
     - python {{ python_min }}
     - flit
   run:
-    - numpy >=1.25
+    - numpy >=2.0
     - python >={{ python_min }}
-    - scipy >=1.11
-    - xarray >=2023.06.0
+    - scipy >=1.13
+    - xarray >=2024.02.0
 
 test:
   imports:
