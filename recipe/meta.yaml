@@ -1,7 +1,7 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 # Generated using grayskull; edited by @ericmjl.
 {% set name = "xarray-einstats" %}
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 39b373deed43592c41d3fbf8863af62e19e01c1ae553ae5ff059a8df78d995c6
+  sha256: d432a363fc8f09baad164f9826dc711551c684b9abd8098c1b961d18663a627d
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
     - python {{ python_min }}
     - flit
   run:
-    - numpy >=1.25
+    - numpy >=2.0
     - python >={{ python_min }}
-    - scipy >=1.11
-    - xarray >=2023.06.0
+    - scipy >=1.13
+    - xarray >=2024.02.0
 
 test:
   imports:
