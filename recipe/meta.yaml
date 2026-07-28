@@ -24,9 +24,8 @@ requirements:
   run:
     - numpy >=2.0
     - python >={{ python_min }}
-    - scipy >=1.13
-- scipy >=1.14
-- xarray >=2024.07.0
+    - scipy >=1.14
+    - xarray >=2024.07.0
 
 test:
   imports:
